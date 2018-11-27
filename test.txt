@@ -1,0 +1,40 @@
+
+          /\      |‾‾|  /‾‾/  /‾/   
+     /\  /  \     |  |_/  /  / /    
+    /  \/    \    |      |  /  ‾‾\  
+   /          \   |  |‾\  \ | (_) | 
+  / __________ \  |__|  \__\ \___/ .io
+
+    init [----------------------------------------------------------] runner    init [----------------------------------------------------------] options    init [----------------------------------------------------------] executor    init [----------------------------------------------------------]   engine    init [----------------------------------------------------------]   collector    init [----------------------------------------------------------]   server  execution: local
+     output: -
+     script: script.js
+
+    duration: 30s, iterations: -
+         vus: 300, max: 300
+
+    init [----------------------------------------------------------] starting
+    ✗ is status 200
+     ↳  80% — ✓ 6389 / ✗ 1590
+    ✗ transaction time < 200ms
+     ↳  85% — ✓ 6817 / ✗ 1162
+    ✗ transaction time < 500ms
+     ↳  98% — ✓ 7869 / ✗ 110
+    ✓ transaction time < 1000ms
+    ✓ transaction time < 2000ms
+
+    checks.....................: 92.80% ✓ 36888 ✗ 2862 
+    data_received..............: 12 MB  416 kB/s
+    data_sent..................: 1.4 MB 46 kB/s
+    http_req_blocked...........: avg=12.04µs min=0s med=4µs     max=4.02ms   p(90)=7µs      p(95)=11µs    
+    http_req_connecting........: avg=6.12µs  min=0s med=0s      max=3.64ms   p(90)=7µs      p(95)=9µs     
+    http_req_duration..........: avg=77.58ms min=0s med=37.94ms max=609.82ms p(90)=239.44ms p(95)=341.48ms
+    http_req_receiving.........: avg=43.31µs min=0s med=41µs    max=2.96ms   p(90)=60µs     p(95)=76µs    
+    http_req_sending...........: avg=27.68µs min=0s med=25µs    max=1.9ms    p(90)=40µs     p(95)=55µs    
+    http_req_tls_handshaking...: avg=0s      min=0s med=0s      max=0s       p(90)=0s       p(95)=0s      
+    http_req_waiting...........: avg=77.51ms min=0s med=37.88ms max=609.74ms p(90)=239.37ms p(95)=341.42ms
+    http_reqs..................: 14335  477.831616/s
+    iteration_duration.........: avg=1.15s   min=1s med=1.07s   max=2.22s    p(90)=1.43s    p(95)=1.63s   
+    iterations.................: 7683   256.099079/s
+    vus........................: 300    min=300 max=300
+    vus_max....................: 300    min=300 max=300
+
