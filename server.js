@@ -11,8 +11,8 @@ app.use(compression());
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get("/", function(req, res) {
-  res.redirect("/api/4");
+app.get("/:id", function(req, res) {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 // overview
