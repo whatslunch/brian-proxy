@@ -11,6 +11,10 @@ app.use(compression());
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/loaderio-bf9c82571ab2814e37c515bd8f8ccc0c/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/loaderio-bf9c82571ab2814e37c515bd8f8ccc0c.txt'));
+});
+
 app.get("/:id", function(req, res) {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
